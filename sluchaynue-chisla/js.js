@@ -1,46 +1,50 @@
-/*
-let a = 7;
-console.log(`Текст 
-На второй строке ${a}`); //используя тильду мы можем писать на второй строке и выводить переменную
-*/
+/*let arr = [5, 2, 'str1', true]
+console.log(arr);*/
 
-//console.log(Math.random());// случайное от 0 до 1
-//console.log(Math.max(3,6,87,34,72,5));// максимальное из выбраных чисел
-//console.log(Math.pow(2,5)); //Возводит 2 в пятую степень
-//console.log(Math.sqrt(16)) //вычисляет квадрат из 16
-//console.log(Math.floor(3,2)) //Округляет в меньшую
+/*let matrix = [
+    [5,8,9],
+    [7,8,9],
+    [5,2,9] ]
+console.log(matrix[0][1]) //выведет значение 8 */
 
-/*
-round	Округляет число по правилам арифметики, то есть round(1.5) == 2, round(-1.5) == -2
-floor	Округляет число вниз (“пол”), при этом floor(1.5) == 1, floor(-1.5) == -2
-ceil	Округляет число вверх (“потолок”), при этом ceil(1.5) == 2, ceil(-1.5) == -1
-trunc	Округление в сторону нуля (отбрасывание дробной части), при этом trunc(1.5) == 1, trunc(-1.5) == -1
-fabs	Модуль (абсолютная величина)
-Корни, степени, логарифмы
-sqrt	Квадратный корень. Использование: sqrt(x)
-cbrt	Кубический корень. Использование: cbrt(x)
-pow	Возведение в степень, возвращает ab. Использование: pow(a,b)
-exp	Экспонента, возвращает ex. Использование: exp(x)
-log	Натуральный логарифм
-log10	Десятичный логарифм
+/* //методы работы с массивами
+let arr = [5, 2, 'str1', true]
+//console.log(arr[arr.length-1]); //Выводим последнее значение относительно количества элементов массива
+//arr.shift()// метот шифт очередь будет брать первый элемент из списка
+//arr.push(8) //Метод пуш добавляет в конец очереди массива значение в скобках
+//arr.pop() // Метод поп, забирает значение с конца массива
+//arr.unshift(6) //метод аншифт добавляет значение в скобка в начало массива
 
-  */
-//4.9879.toFixed(2)  округляет до 2 знаков
-//если перед числом поставить + то оно будет считаться числовым параметром. +5+5=10 а не 55
-
-
-/*
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;}
-    console.log(getRandomArbitrary(2,10).toFixed(2));
-    Выводит рандомное число
+//let arr = [5, 2, 'str1', true]  //создали массив
+//let arr2 = [1,2,3] // создали второй массив
+//arr.concat(arr2) // приклеели к первому массиву второй
+//let arr3 = arr.concat(arr2) // Создали переменную со склеенным массивом
+//let arr5 = arr.join(' / ') //выведет значения массива в таком виде 5 / 2 / str1 / true
     */
-/*
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-console.log(getRandomInt(2,10));
- Выводит рандомное число
+/*  пример использования метода slice
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+console.log(animals.slice(-2));
+// expected output: Array ["duck", "elephant"]
+console.log(animals.slice(2, -1));
+// expected output: Array ["camel", "duck"]*/
+
+//slise не путать со splice
+/* Проверяет есть ли duck в массиве
+let animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+console.log(animals.includes("duck"))
 */
+/* Создаст массив из строки и разделит по запятойц
+let myvar = "Иван, Петр, Саша".split(',')
+console.log(myvar)
+*/
+/* Разобьет слово на буквы и создаст массив (4) ['И', 'в', 'а', 'н']
+let myvar = "Иван".split('')
+console.log(myvar)
+*/
+
