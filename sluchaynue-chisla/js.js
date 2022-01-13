@@ -47,4 +47,16 @@ console.log(myvar)
 let myvar = "Иван".split('')
 console.log(myvar)
 */
+let litera = `н`
+let myname = 'Константин' //Будем проверять в этом слове
+let myarr = myname.split('') // создали массив из букв имени
+let myliter = myarr.includes(litera ) // какую букву проверяем
+
+if (myliter == true ){
+    alert(`В слове  `+myname+ ` есть буква `+ litera)
+}
+else {
+    alert(`В слове  `+myname+ ` нет буквы `+ litera)
+}
+
 
